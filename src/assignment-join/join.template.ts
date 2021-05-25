@@ -10,7 +10,7 @@ function getRandomValue(values: any[]) {
     return values[random];
 }
 
-const GFX_TEAM_MEMBERS = [
+const FRAMEWORKS = [
     'Angular',
     'React',
     'Veu',
@@ -25,7 +25,7 @@ d3.select("body").insert('button', ':first-child').text('Generate Data').on('cli
     draw(svg, randomData);
 })
 function generateRandomData(): {title:string, value: number}[]{
-    return GFX_TEAM_MEMBERS.reduce((acc,title)=>{
+    return FRAMEWORKS.reduce((acc,title)=>{
         if(getRandomValue([true, false])){
             acc.push({
                 title,

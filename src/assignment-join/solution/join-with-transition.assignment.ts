@@ -10,15 +10,13 @@ function getRandomValue(values: any[]) {
     return values[random];
 }
 
-const GFX_TEAM_MEMBERS = [
-    'Oz',
-    'Irena',
-    'Liron',
-    'Amir',
-    'Vova',
-    'Yam',
-    'Pinto',
-    'Noam'
+const FRAMEWORKS = [
+    'Angular',
+    'React',
+    'Veu',
+    'JQuery',
+    'Ember',
+    'Semantic-UI'
 ];
 
 const svg = d3.select("body").append('svg')
@@ -28,7 +26,7 @@ d3.select("body").insert('button', ':first-child').text('Generate Data').on('cli
     draw(svg, randomData);
 })
 function generateRandomData(): {title:string, value: number}[]{
-    return GFX_TEAM_MEMBERS.reduce((acc,title)=>{
+    return FRAMEWORKS.reduce((acc,title)=>{
         if(getRandomValue([true, false])){
             acc.push({
                 title,
