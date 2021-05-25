@@ -19,7 +19,7 @@ const FRAMEWORKS = [
     'Semantic-UI'
 ];
 
-const svg = d3.select("body").append('svg')
+const svg = d3.select("body").append('svg').attr('width', '600px')
 
 d3.select("body").insert('button', ':first-child').text('Generate Data').on('click',()=>{
     const randomData = generateRandomData();

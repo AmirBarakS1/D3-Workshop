@@ -6,8 +6,8 @@
 
 
 //Solutions
-// import './assignment-bind-circles/solution/bind-circles.assignment';
 // import './assignment-draw-with-d3/solution/draw-with-d3.assignment';
+// import './assignment-bind-circles/solution/bind-circles.assignment';
 // import './assignment-join/solution/join.assignment';
 // import './assignment-join/solution/join-with-transition.assignment';
 // import './assignment-tree/solution/tree.assignment';
